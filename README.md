@@ -21,6 +21,14 @@
 另外，你有需要通过串口侦听第三方公司的设备，抓取报文时，可以看看我的技术博客分享：【DIY】RS232串口监听头制作<br>
 https://blog.csdn.net/liangyuna8787/article/details/153656587?spm=1001.2014.3001.5502<br>
 # CAN
-串行总线协议，与Modbus一样，在QT自带的serialbus模块中，主要是QCanBus、QCanBusDevice、QCanBusFrame这3个子模块，在做上位机应用时，通常是通过转换适配器（以太网-CAN 网关、USB-CAN）实现物理链路的。
-<img width="515" height="434" alt="image" src="https://github.com/user-attachments/assets/48190385-3e49-4cae-8ec9-e13aeee13878" />
-
+串行总线协议，与Modbus一样，在QT自带的serialbus模块中，主要是QCanBus、QCanBusDevice、QCanBusFrame这3个子模块。项目can目录是QT自带的案例。<br>
+## 使用场景
+在做上位机应用时，通常是通过转换适配器（以太网-CAN 网关、USB-CAN）实现物理链路，与Modbus的串口模式类似。<br>
+<img width="515" height="434" alt="image" src="https://github.com/user-attachments/assets/48190385-3e49-4cae-8ec9-e13aeee13878" /><br>
+# mqtt
+ mqtt是一个订阅/发布模式的存储/转发职能的网络中间件，它包含broket服务端，可以下载开源的Mosquitto，支持匿名/账号方式。<br>
+ ## 使用场景
+ 如果采集设备本身支持以太网协议，是可以主动把数据推送给mqtt的，如果是采集设备数据只支持前面3种（modbus、serial、can）直接链路协议，可以增加一个专用网关统一采集数据之后，再推送给MQTT，我分享的另外一个项目就是需要网关设备进行统一采集的物联网项目，https://github.com/ocy-org/IoT-Switch<br>
+ 项目mqtt目录，是使用了开源的qtmqtt编译的库进行开发的，可订阅和推送，以下图片是与IoT-Switch联调的效果<br>
+ <img width="940" height="694" alt="0a072bb4ad47c35b37f5de59eb634f8c" src="https://github.com/user-attachments/assets/95672729-02b7-4097-98c8-ecd1d83775bc" />
+ 个人博客上分享有mqtt的详细介绍 https://blog.csdn.net/liangyuna8787/article/details/166465769?spm=1001.2014.3001.5502
