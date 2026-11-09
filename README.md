@@ -26,7 +26,7 @@ https://blog.csdn.net/liangyuna8787/article/details/153656587?spm=1001.2014.3001
 在做上位机应用时，通常是通过转换适配器（以太网-CAN 网关、USB-CAN）实现物理链路，与Modbus的串口模式类似。<br>
 <img width="515" height="434" alt="image" src="https://github.com/user-attachments/assets/48190385-3e49-4cae-8ec9-e13aeee13878" /><br>
 # mqtt
- mqtt是一个订阅/发布模式的存储/转发职能的网络中间件，它包含broket服务端，可以下载开源的Mosquitto，支持匿名/账号方式。<br>
+ mqtt是一个订阅/发布模式的存储/转发职能的网络中间件，它包含broket服务端和自定义开发客户端，可以下载开源的Mosquitto，支持匿名/账号方式。<br>
  ## 使用场景
  如果采集设备本身支持以太网协议，是可以主动把数据推送给mqtt的，如果是采集设备数据只支持前面3种（modbus、serial、can）直接链路协议，可以增加一个专用网关统一采集数据之后，再推送给MQTT，我分享的另外一个项目就是需要网关设备进行统一采集的物联网项目，https://github.com/ocy-org/IoT-Switch<br>
  项目mqtt目录，是使用了开源的qtmqtt编译的库进行开发的，可订阅和推送，以下图片是与IoT-Switch联调的效果<br>
