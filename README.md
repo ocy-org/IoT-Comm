@@ -20,6 +20,10 @@
 个人博客上分享有详细的介绍 https://blog.csdn.net/liangyuna8787/article/details/152811310?spm=1001.2014.3001.5502<br>
 另外，你有需要通过串口侦听第三方公司的设备，抓取报文时，可以看看我的技术博客分享：【DIY】RS232串口监听头制作<br>
 https://blog.csdn.net/liangyuna8787/article/details/153656587?spm=1001.2014.3001.5502<br>
+<img width="905" height="922" alt="image" src="https://github.com/user-attachments/assets/980bcdb6-e0cf-46e3-9b36-e5641f2c4d86" /><br>
+<img width="431" height="474" alt="image" src="https://github.com/user-attachments/assets/31e342b3-3c73-4fc6-8651-b210a7a9e02b" />
+<img width="381" height="375" alt="image" src="https://github.com/user-attachments/assets/7d231fa2-baee-4559-8750-3029473d41dc" />
+
 # CAN
 串行总线协议，与Modbus一样，在QT自带的serialbus模块中，主要是QCanBus、QCanBusDevice、QCanBusFrame这3个子模块。项目can目录是QT自带的案例。<br>
 ## 使用场景
